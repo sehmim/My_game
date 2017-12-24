@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hero2</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" type="image/png" href="images/theme.jpg" />
+  <script type="text/javascript" src="hero1.js"></script>
+  <script type="text/javascript" src="knowMons.js"></script>
+  <script type="text/javascript" src="strength.js"></script>
+</head>
+<body style="background-image: url(images/map.jpg);">
+<div class="heroFace2" id="boss" onclick="bossfight()">
+  <img src="images/who.png" width="250" height="250" style="left: 20px;">
+</div>
+
+
+<div style="margin-right: 1020px; position: absolute; top: 0px; right:-720px; font-size: 15px;" class="question">
+  <a href="index.html"> Quit Game </a>
+</div>
+
+<!-- PLAY 1-->
+<div class="health" value ="Health"></div>
+<div class="card card-1" id="12">
+  <img src="images/cave.jpg" width="100" height="100" style="left: 20px;" onclick="showDiv('monster1')">
+</div>
+
+
+<!--
+
+
+FOR JOE!!!!!
+
+IF YOU WANT A SHORT CUT TO THE BOSS THEN JUST CHANGE THE LINK TO BOSS.HTML
+
+IF YOU WANT A SHORT CUT TO THE DEATH JUST CHANGE THE LINK TO DEATH.HTML
+
+
+
+
+
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+<!-- CYCLOPS-->
+
+<div id="monster1" style="width: 1200px; height: 600px; border: 5px solid black; left: 50px; top:20px; background-image:url(images/Monsters/Cyclops1.jpg); visibility: hidden; position: absolute;">
+  <div class="header1">You've Been Confronted By</div>
+  <div class="mosterName"> CYCLOPS </div>
+  <span class="mosterD"> Monster Type: KNOWLEDGE BASE <br>
+          Monster Health: 120HP <br>
+          Monster Difficulity: 2 <br>
+  </span>
+
+  <button onclick="showDiv('question')" class="button"> FIGHT </button>
+
+  <button onclick="run('monster1', 'question')" class="button"> RUN </button> <br>
+
+  <div id="question" class="question" style="visibility: hidden">
+    I have one eye but that means no less
+My smarts are lost 
+but my heart is in my chest.
+Make no mistake 
+As I carry my pride
+The definition of cyclops means:
+ <br>
+    <div id="choices" class="choices">
+      <button class="button" id="choice1" onclick="wrongAnswer()"> Beast </button> <br>
+      <button class="button" id="choice2" onclick="wrongAnswer()"> Big Guy</button> <br>
+      <button class="button" id="answer"  onclick="rightAnswer()"> Rounded Eye </button><br>
+    </div>
+  </div>
+
+  <div id="question2" class="question" style="visibility: hidden">
+    YOU WON. WHAT WILL YOU DO NOW? ? <br>
+    <div class="button" id="choices" class="choices">
+      <button class="button" id="choice1" onclick="kill('monster1','question2')"> KILL THE ENEMY </button> <br>
+      <button class="button" id="choice2" onclick="letgo('monster1','question2')"> LET IT GO</button> <br>
+    </div>
+  </div>
+
+</div>
+
+
+<!--CHIMERA-->
+
+<div class="card card-2"><img src="images/waves.jpg" width="100" height="100" style="left: 20px;" onclick="showDiv('monster2')"></div>
+
+<div id="monster2" style="width: 1200px; height: 600px; border: 5px solid black; left: 50px; top:20px; background-image:url(images/Monsters/Chimera1.jpg); visibility: hidden; position: absolute;">
+  <div class="header1">You've Been Confronted By</div>
+  <div class="mosterName"> THE CHIMERA</div>
+  <span class="mosterD">  Monster Type: Damage BASE <br>
+          Monster Health: 120HP <br>
+          Monster Difficulity: 5 <br>
+  </span>
+  <div id="monsterhealth2" style=""><script type="text/javascript">
+  </script>
+    </div>
+  <button onclick="showDiv('attack2');showDiv('monsterhealth2')" style=" background-color: black; color: white;bottom: 500px; font-size: 30px;"> FIGHT </button>
+
+  <button onclick="run('monster2', 'attack')" style=" background-color: black; color: red;bottom: 500px; font-size: 30px;"> RUN </button> <br>
+
+  <div id="attack2" class="question" style="visibility: hidden"><br><br><br>
+    ITS A TRAP!!! YOU CANT ESCAPE!! Roll a 2 or up to win <br>
+    <div id="dicediv" class="choices">
+      <button class="button" id="dice" onclick="diceAnimation();setTimeout(rollDice(2,'monster2','attack2','question2'), 30);"> Roll Dice </button> <br>
+    </div>
+  </div>
+  <div id="question2" class="question" style="visibility: hidden">
+    YOU WON. WHAT WILL YOU DO NOW? ? <br>
+    <div id="choices" class="choices">
+      <button class="button" id="choice1" onclick="kill()"> KILL THE ENEMY </button> <br>
+      <button class="button" id="choice2" onclick="letgo()"> LET IT GO</button> <br>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+<!-- MONSTER 3-->
+
+
+
+<div class="card card-3"><img src="images/cave.jpg" width="100" height="100" style="left: 20px;" onclick="showDiv('monster3')"></div>
+
+<div id="monster3" style="width: 1200px; height: 600px; border: 5px solid black; left: 50px; top:20px; background-image:url(images/Monsters/Cetus1.jpg); visibility: hidden; position: absolute;">
+  <div class="header1">You've Been Confronted By</div>
+  <div class="mosterName"> 
+  CETUS</div>
+  <span class="mosterD">  Monster Type: Damage BASE <br>
+          Monster Health: 100HP <br>
+          Monster Difficulity: <b> 9 <b></b> <br>
+  </span>
+  <div id="monsterhealth2" style=""><script type="text/javascript">
+  </script>
+    </div>
+  <button onclick="showDiv('attack');showDiv('monsterhealth2')" style=" background-color: black; color: white;bottom: 500px; font-size: 30px;"> FIGHT </button>
+
+  <button onclick="run('monster3', 'attack')" style=" background-color: black; color: red;bottom: 500px; font-size: 30px;"> RUN </button> <br>
+
+  <div id="attack" class="question" style="visibility: hidden">
+    Roll a 5 or up to win <br>
+    <div id="dicediv" class="choices">
+      <button class="button" id="dice" onclick="diceAnimation();setTimeout(rollDice(5,'monster3','attack','question2'), 30);"> Roll Dice </button> <br>
+    </div>
+  </div>
+    <div id="question2" class="question" style="visibility: hidden">
+    YOU WON. WHAT WILL YOU DO NOW? ? <br>
+    <div id="choices" class="choices">
+      <button class="button" id="choice1" onclick="kill()"> KILL THE ENEMY </button> <br>
+      <button class="button" id="choice2" onclick="letgo()"> LET IT GO</button> <br>
+    </div>
+  </div>
+
+
+</div>
+
+<!--  MONSTER 4   -->
+
+<div class="card card-4"><img src="images/waves.jpg" width="100" height="100" style="left: 30px;" onclick="showDiv('monster4')"></div>
+
+
+<div id="monster4" style="width: 1200px; height: 600px; border: 5px solid black; left: 50px; top:20px; background-image:url(images/Monsters/Hydra1.jpg); visibility: hidden; position: absolute;">
+  <div class="header1">You've Been Confronted By</div>
+  <div class="mosterName"> THE HYDRA </div>
+  <span align="right" class="mosterD"> Monster Type: KNOWLEDGE BASE <br>
+          Monster Health: 120HP <br>
+          Monster Difficulity: 2 <br>
+  </span>
+
+  <button onclick="showDiv('question5')" style=" background-color: black; color: white;bottom: 500px; font-size: 30px;"> FIGHT </button>
+
+  <button onclick="run('monster4', 'question5')" style=" background-color: black; color: red;bottom: 500px; font-size: 30px;"> RUN </button> <br>
+
+  <div id="question5" class="question" style="visibility: hidden">
+    I stomp and i hiss
+Sending fear and frightens
+I’ve been in popular movies
+Like Clash of The Titans,
+My original defeat
+I was not to blame
+But who doth kill me
+What was his name?<br>
+
+  <div id="question2" class="question" style="visibility: hidden">
+    YOU WON. WHAT WILL YOU DO NOW? ? <br>
+    <div id="choices" class="choices">
+      <button class="button" id="choice1" onclick="kill()"> KILL THE ENEMY </button> <br>
+      <button class="button" id="choice1" onclick="letgo()"> LET IT GO</button> <br>
+    </div>
+  </div>
+
+    <div id="choices" class="choices">
+      <button class="button" id="choice5" onclick="wrongAnswer2()"> Hadies </button> <br>
+      <button class="button" id="choice5" onclick="wrongAnswer2()"> Zuze </button> <br>
+      <button class="button" id="answer5"  onclick="rightAnswer2()"> Heracles </button><br>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+
+<!-- MONSTER 5 -->
+
+<div class="card card-5"><img src="images/forest.jpg" width="100" height="100" style="left: 20px;" onclick="showDiv('monster5')"></div>
+
+
+<div id="monster5" style="width: 1200px; height: 600px; border: 5px solid black; left: 50px; top:20px; background-image:url(images/Monsters/Minotaur1.jpg); visibility: hidden; position: absolute;">
+  <div class="header1">You've Been Confronted By</div>
+  <div class="mosterName"> THE MINOTAUR </div>
+  <span class="mosterD"> Monster Type: KNOWLEDGE BASE <br>
+          Monster Health: 120HP <br>
+          Monster Difficulity: 2 <br>
+  </span>
+
+  <button onclick="showDiv('question10')" style=" background-color: black; color: white;bottom: 500px; font-size: 30px;"> FIGHT </button>
+
+  <button onclick="run('monster5', 'question10')" style=" background-color: black; color: red;bottom: 500px; font-size: 30px;"> RUN </button> <br>
+
+  <div id="question10" class="question" style="visibility: hidden">
+I’m half man and half bull
+I hope you understand,
+I roam this Labyrinth,
+I am the law of this land.
+But who was the king,
+The king in command,
+That sent me 7 boys and 7 girls,
+For me to devour from this wasteland?
+
+
+ <br>
+    <div id="choices" class="choices">
+      <button class="button" id="choice10" onclick="wrongAnswer3()"> Giant </button> <br>
+      <button class="button" id="choice10" onclick="wrongAnswer3()"> Lord Beast</button> <br>
+      <button class="button" id="answer10"  onclick="rightAnswer3()"> King Minos </button><br>
+    </div>
+  </div>
+
+  <div id="question2" class="question" style="visibility: hidden">
+    YOU WON. WHAT WILL YOU DO NOW? ? <br>
+    <div id="choices" class="choices">
+      <button class="button" id="choice1" onclick="kill()"> KILL THE ENEMY </button> <br>
+      <button class="button" id="choice2" onclick="letgo()"> LET IT GO</button> <br>
+    </div>
+  </div>
+
+</div>
+
+
+
+<!-- MONSTER 6 -->
+
+<div class="card card-6"><img src="images/cave.jpg" width="100" height="100" style="left: 20px;" onclick="showDiv('monster6')"></div>
+
+<div id="monster6" style="width: 1200px; height: 600px; border: 5px solid black; left: 50px; top:20px; background-image:url(images/Monsters/Charybdis1.jpg); visibility: hidden; position: absolute;">
+  <div class="header1">You've Been Confronted By</div>
+  <div class="mosterName"> THE CHARYBDIS</div>
+  <span class="mosterD">  Monster Type: Damage BASE <br>
+          Monster Health: 120HP <br>
+          Monster Difficulity: 5 <br>
+  </span>
+
+  <button onclick="showDiv('attack6');" style=" background-color: black; color: white;bottom: 500px; font-size: 30px;"> FIGHT </button>
+
+  <button onclick="run('monster6', 'attack6')" style=" background-color: black; color: red;bottom: 500px; font-size: 30px;"> RUN </button> <br>
+
+  <div id="attack6" class="question" style="visibility: hidden">
+    Roll a 3 or up to win <br>
+     <div id="question6" class="question" style="visibility: hidden">
+    YOU WON. WHAT WILL YOU DO NOW? ? <br>
+    <div id="choices" class="choices">
+      <button class="button" id="choice1" onclick="kill('monster6','question6')"> KILL THE ENEMY </button> <br>
+      <button class="button" id="choice2" onclick="letgo('monster6','question6')"> LET IT GO</button> <br>
+    </div>
+  </div>
+
+    <div id="dicediv" class="choices">
+      <button class="button" id="dice" onclick="diceAnimation();setTimeout(rollDice(3), 30);"> Roll Dice </button> <br>
+    </div>
+
+  </div>
+
+
+</div>
+
+<!--BOSS -->
+
+<div class="heroFace" >
+  <img src="images/glad2.jpg" width="250" height="250">
+</div>
+
+<audio autoplay controls preload="metadata" class="audio" controls >
+  <source src="music/DaveFuglewicz.mp3" type="audio/ogg">
+</audio>
+
+
+
+
+<style type="text/css">
+body {
+  text-align: center;
+}
+
+
+
+
+div.card {
+  background: #fff;
+  border-radius: 5px;
+  display: inline-block;
+  height: 100px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 100px;
+  text-align: center;
+  padding: 5px;
+  margin-left: 10px;
+  margin-right: 180px;
+  opacity: 0;
+
+}
+div.card-1:hover {
+    -webkit-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.09);
+  opacity: 1;
+}
+.card-4:hover {
+    -webkit-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.09);
+  opacity: 1;
+}
+.card-5:hover {
+    -webkit-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.09);
+  opacity: 1;
+}
+.card-6:hover {
+    -webkit-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.09);
+  opacity: 1;
+}
+.card-7:hover {
+    -webkit-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.09);
+  opacity: 1;
+}
+.card-8:hover {
+    -webkit-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.09);
+  opacity: 1;
+}
+.card-3:hover {
+    -webkit-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.09);
+  opacity: 1;
+}
+.card-2:hover {
+    -webkit-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.09);
+  opacity: 1;
+}
+
+.heroFace {
+  background: #fff;
+  border-radius: 5px;
+  display: inline-block;
+  height: 250px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 250px;
+  text-align: center;
+  padding: 5px;
+  margin-left: 0px;
+  margin-right: 120px;
+
+}
+
+.heroFace2 {
+  background: #fff;
+  border-radius: 5px;
+  display: inline-block;
+  height: 250px;
+  margin-top: 5px;
+  width: 250px;
+  text-align: center;
+  padding: 5px;
+  margin-left: 0px;
+  margin-right: 120px;
+  opacity: 0;
+
+
+
+}
+
+.heroFace2:hover {
+  -webkit-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.09);
+  opacity: 1;
+}
+
+.gamemap{
+  position: absolute;
+  top: 1250px;
+  border: 10px solid black;
+  background-color: #38292d;
+  width: 1020px;
+  height: 570px ;
+  margin-bottom: 25px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+#monsterhealth2{
+
+  position: absolute;
+  float: right;
+  font-family: 'Lucida Blackletter';
+  font-size: 55px;
+  color: red;
+  text-align: right;
+}
+.dice {
+  border-radius: 100%;
+
+  -webkit-animation-name: cssAnimation;
+  -webkit-animation-duration:3s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+  
+}
+@-webkit-keyframes cssAnimation {
+  0% {
+    -webkit-transform: rotate(0deg) scale(1)skew(0deg) translate(10px);
+  }
+  50% {
+    -webkit-transform: rotate(720deg) scale(2) skew(0deg) translate(-10px);
+  }
+}
+
+.button {
+  background-color: black;
+  color: red;
+  bottom: 500px;
+  font-size: 30px;
+}
+
+
+
+
+</style>
+</body>
+</html>

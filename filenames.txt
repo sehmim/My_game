@@ -1,0 +1,25 @@
+List of All Files
+
+HTML
+
+1. index.html
+2. hero1.html
+3. hero2.html
+4. statement.html
+5. credits.html
+6. history.html
+7. play.html
+8. boss.html
+
+
+JS
+
+1. index.js 
+2. hero1.js
+3. hero2.js
+4. knowMons.js
+5. strength.js
+
+CSS
+
+1.stylesheet.css

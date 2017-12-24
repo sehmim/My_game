@@ -1,0 +1,413 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+@import url(https://fonts.googleapis.com/css?family=Mr+Dafoe);
+
+/* Cool Fonts:
+
+Lucida Blackletter
+Kino MT
+Copperplate Gothic Bold
+
+*/
+
+
+#credits{
+
+	position: absolute;
+	width: 400px;
+	height: 600px;
+	right: 800px;
+	top: 100px;
+
+
+}
+
+.enemy{
+
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	right: 20px;
+	top: 100px;
+}
+
+.p1 {
+	color: silver;
+	font-size: 20px;
+	margin: 15px 15px 25px 25px;
+}
+
+.h3{
+	font-family: 'Lucida Blackletter';
+	color: silver;
+	font-size: 30px;
+}
+.h2 {
+  font-family: 'Lucida Blackletter';
+  font-size: 35px;
+  color: #EDEAC2;
+
+}
+
+
+.health {
+
+  font-family: 'Lucida Blackletter';
+  font-size: 25px;
+  color: #EBEAA2;
+  text-align: center;
+  line-height: 100px;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
+  z-index: 10;
+  position: fixed;
+  right: 1125px;
+
+
+}
+
+#choice1 {
+
+	background-color: #696969;
+	color: #009999;
+	bottom: 500px;
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+#choice2 {
+
+	background-color: #696969;
+	color: #009999;
+	bottom: 500px;
+	font-size: 30px;
+	margin-bottom: 10px;
+}
+#answer {
+
+	background-color: #000066;
+	color: #009999;
+	bottom: 500px;
+	margin-bottom: 10px;
+	font-size: 30px;
+}
+
+.question{
+
+	background-color: 	 #696969;
+	font-family: 'Lato';
+	font-size: 40px;
+	color: white;
+	border: 10px solid black;
+}
+
+.mosterD{
+	color: #fdb7ed; 
+	font-family: 'Lucida Sans', Arial, sans-serif;
+	font-size: 30px; line-height: 26px; 
+	text-indent: 30px;
+	margin: 0 10px 10px;
+}
+
+.mosterName{
+color: #ffffff;
+font-family: 'Lato', 
+sans-serif; 
+font-size: 54px;
+ font-weight: 300;
+  line-height: 58px; 
+margin: 0 0 10px;
+
+
+}
+.header1{
+
+  font-family: 'Lucida Blackletter';
+  font-size: 75px;
+  color: #EBEAA2;
+  text-align: center;
+  line-height: 100px;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+}
+
+#ability1 {
+	position: absolute;
+	text-align: center;
+	opacity: 1;
+	font: 30;
+	bottom: 400px;
+	left: 50px;
+	color: black;
+	font-family: 'Copperplate Gothic Bold';
+}
+
+
+#img1 {
+
+	position: absolute;
+	bottom: 400px;
+	left: 50px;
+}
+
+#img2 {
+
+	position: absolute;
+	bottom: 130px;
+	left: 300px;
+
+}
+#img3 {
+
+	position: absolute;
+	bottom: 400px;
+	right: 350px;
+
+}
+
+#img4 {
+
+	position: absolute;
+	bottom: 100px;
+	right: 150px;
+
+}
+
+
+.header1
+{
+	text-align: center;
+	font: 50px;
+	bottom: 4px; 
+	margin-top: 0px;
+	float: 0px;
+}
+
+.background {
+	background-image : url(images/background.jpg);
+}
+
+#map {
+	position: absolute;
+	top: 100px;
+	border: 10px solid black;
+	background-color: #38292d;
+	width: 1020px;
+	height: 570px ;
+	margin-bottom: 25px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+#map2 {
+    margin:20px;
+    size: 50px;
+}
+
+
+.heros:hover, .heros:focus, .heros:active, .ability:hover {
+  -webkit-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+
+
+.heros {
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  -moz-box-shadow: 2px 2px 4px 0px #006773;
+  -webkit-box-shadow: 2px 2px 4px 0px #006773;
+  box-shadow: 2px 2px 4px 0px #006773;
+  -moz-border-radius: 7px 7px 7px 7px;
+  -webkit-border-radius: 7px 7px 7px 7px;
+  border-radius: 7px 7px 7px 7px;
+
+}
+.audio{
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	background-color: black;
+
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    margin-left: -5px;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+
+/* For the beginning button */
+.enter {
+    margin:20px;
+
+
+}
+
+#rbenter {position: absolute;
+	top: 255px;
+	left: 252px;
+	
+}
+
+ .rbenter img { 
+	width:255px;
+	height:255px;
+ 	-webkit-transition: all .2s ease; 
+ 	-moz-transition: all .2s ease; 
+ 	transition: all .2s ease; 
+ 	opacity: 0;
+ 	position: absolute;
+ 	top: 120px;
+ 	left: 420px;
+
+ } 
+ .rbenter img:hover { 
+	top: 130px;
+ 	opacity: 1;
+ 	width:270px;
+	height:270px;
+}
+
+#rtenter {
+	position: absolute;
+	top: -20px;
+	left: 252px;
+	
+}
+
+ .rtenter img { 
+	width:255px;
+	height:255px;
+ 	-webkit-transition: all .2s ease; 
+ 	-moz-transition: all .2s ease; 
+ 	transition: all .2s ease; 
+ 	opacity: 0;
+ 	position: absolute;
+ 	top: 120px;
+ 	left: 420px;
+	width:255px;
+
+ } 
+ .rtenter img:hover { 
+	top: 110px;
+ 	opacity: 1;
+ 	width:270px;
+	height:270px;
+}
+
+#lbenter {position: absolute;
+	top: 255px;
+	left: -20px;
+	
+}
+
+ .lbenter img { 
+ 	position: absolute;
+ 	top: 120px;
+ 	left: 420px;
+	width:255px;
+	height:255px;
+ 	-webkit-transition: all .2s ease; 
+ 	-moz-transition: all .2s ease; 
+ 	transition: all .2s ease; 
+ 	opacity: 0;
+
+ } 
+ .lbenter img:hover { 
+ 	position: absolute;
+	top: 130px;
+ 	opacity: 1;
+ 	width:270px;
+	height:270px;
+}
+
+#ltenter {
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	
+}
+
+ .ltenter img { 
+	width:255px;
+	height:255px;
+ 	-webkit-transition: all .2s ease; 
+ 	-moz-transition: all .2s ease; 
+ 	transition: all .2s ease; 
+ 	opacity: 0;
+ 	position: absolute;
+ 	top: 120px;
+ 	left: 420px;
+
+ } 
+ .ltenter img:hover { 
+	top: 110px;
+ 	opacity: 1;
+ 	width:270px;
+	height:270px;
+}
+
+.start img {
+	width:255px;
+	height:255px;
+ 	-webkit-transition: all .2s ease; 
+ 	-moz-transition: all .2s ease; 
+ 	transition: all .2s ease; 
+ 	position: absolute;
+ 	top: 250px;
+ 	font: 500px;
+ 	left: 530px;
+ 	background-color: #4c0618;
+ 	border-radius: 50%;
+ 	opacity: 0;
+}
+
+.start img:hover {
+	top: 240px;
+ 	opacity: .8;
+ 	width:250px;
+	height:250px;
+
+}

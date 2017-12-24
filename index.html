@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Liberator's Odyssey</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="icon" type="image/png" href="images/theme.jpg" />
+	<script type="text/javascript" src="index.js"></script>
+</head>
+<body style="background-image: url(images/bgblack3.jpg);">
+<h1 class="header1"> The Liberator's Odyssey </h1>
+
+
+<div class="enter" id="enter" style="margin:0px; ">
+		<img src="images/enterbg.png" width="500" height="500" style="position: absolute; left: 30%; top: 120px; margin-top: 0px">
+		
+		<!--  STORY  -->
+		<div id="rbenter" class="rbenter" onmouseover="hover()">
+			<a href="statement.html">
+				<img id="bottomLeft" src="images/rbenter.png" width="250" height="250"  type="button" onClick="showImage('loadingImage','bottomLeft')">
+			</a>
+		</div>
+
+		<!--  History  -->
+		<div id="rtenter" class="rtenter" onmouseover="hover()">
+			<img id="rtenter1" src="images/rtenter.png" width="250" height="250"  type="button" onClick="showImage('credits','rtenter1')";">
+			<img id="credits" src="images/Prophecy.jpg" style="visibility:hidden" onClick="showImage('rtenter1','credits')"">
+		</div>
+
+		<!--  PLAY  -->
+		<div id="lbenter" class="lbenter" onmouseover="hover()">
+			<a href="play.html"><img src="images/lbenter.png" width="250" height="250"  type="button"></a>
+		</div>
+
+		<!--  Credits  -->
+		<div id="ltenter" class="ltenter" onmouseover="hover()">
+			<a href="credits.html">
+			<img id="ltenter1" src="images/ltenter.png" width="250" height="250"  type="button" onClick="showImage('history','ltenter1')"></a>
+		</div>
+
+</div>
+
+
+		
+<audio autoplay controls preload="metadata" class="audio" controls loop>
+  <source src="music/DarkMagic.mp3" type="audio/ogg">
+
+</audio>
+
+
+
+</div>
+<div style="position: absolute; bottom: 0px;">
+	<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
+		Creative Commons Attribution-NonCommercial 4.0 International License</a>
+
+		<a style="position: absolute; bottom: 0px; right: -850px;" rel="license" href="credits.html">
+		Sourecs and Credits</a>
+</div>
+
+<style type="text/css">
+
+
+</style>
+
+</body>
+</html>

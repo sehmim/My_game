@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Liberator's Odyssey</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="icon" type="image/png" href="images/theme.jpg" />
+	<script type="text/javascript" src="index.js"></script>
+		<script type="text/javascript" src="hero1.js"></script>
+			<script type="text/javascript" src="knowMons.js"></script>
+				<script type="text/javascript" src="strength.js"></script>
+				<script type="text/javascript" src="boss.js"></script>
+</head>
+<body style="background-image: url(images/bgblack3.jpg);">
+
+
+<h1 class="header1"> YOU"VE FINALY FOUND IT </h1>
+<p align="center" class="p1"> KILL HIM TO GET THE STONE OF DESTINY </p>
+
+<p align="center" class="p1"> BUT BE WARNED! ONCE YOU START THE FIGHT, THERE IS NO GOING BACK!! </p>
+ <button onclick="showDiv('bossdiv')" style="position: absolute; left: 45%; background-color: black; color: white;bottom: 400px; font-size: 30px;"> FIGHT </button>
+
+ <div id="bossdiv" style="visibility: hidden;" onclick="click()">
+ 	<img class="question" width="1200" height="600" src="images/boss.jpg">
+
+ 	<button style="color: white;background-color: black; font-family: 'Lucida Blackletter'; font-size: 100px; position: absolute;top: 500px; left: 35%" onclick="bossFightLoop()">
+ 		ATTACK
+ 	</button>
+
+ </div>
+
+
+		
+<audio autoplay controls preload="metadata" class="audio" controls>
+  <source src="music/MarcTeichert.mp3" type="audio/ogg">
+
+</audio>
+
+<style type="text/css">
+ 
+
+</style>
+
+</body>
+</html>
